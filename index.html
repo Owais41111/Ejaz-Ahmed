@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejaz Ahmed</title>
+    <link rel="icon" type="image/x-icon" href="img/Ej Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Lucide Icon Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="logo"><span class="highlight">E</span>jaz</div>
+
+            <!-- Desktop Nav -->
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <div class="nav-toggle">
+                <button id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <!-- Blue Glow -->
+        <div class="glow"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Ejaz Ahmed</span></h1>
+                <p class="subtitle">Software Developer & Public Speaker</p>
+                <p class="description">
+                    Passionate about creating beautiful, functional interfaces and sharing knowledge through public
+                    speaking.
+                </p>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <a href="tel:+923402515915" class="contact-link">
+                        <i data-lucide="phone"></i> +92 3402515915
+                    </a>
+                    <a href="mailto:ejazahmed6070+resume@gmail.com" class="contact-link">
+                        <i data-lucide="mail"></i> ejazahmed6070+resume@gmail.com
+                    </a>
+                    <span class="contact-link">
+                        <i data-lucide="map-pin"></i> Karachi korangi Sector 48A
+                    </span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="hero-buttons">
+                    <button class="btn-primary"><a href="https://owais41111.github.io/Responsive-CV-Page/" >Hire
+                            Me</a></button>
+                    <button class="btn-outline">
+                        <a href="" target="_blank">
+                            Let's Talk
+                        </a>
+                    </button>
+
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ejaz-ahmed-602a02321/?trk=PROFILE_DROP_DOWN" target="_blank"
+                        class="icon-button">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://sketchfab.com/Ejazahmed1" target="_blank" class="icon-button">
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="img/myimg.png" alt="Ejaz Ahmed" />
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="education" class="education-section">
+        <h3 class="section-title">Education Timeline</h3>
+
+        <div class="education-cards">
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-bg"><i data-lucide="graduation-cap"></i></div>
+                    <div>
+                        <h4 class="card-title">Software Engineering</h4>
+                        <p class="card-subtitle">Sindh Madressatul Islam University</p>
+                    </div>
+                </div>
+                <div class="card-content">2023–Present • CGPA: 2.91</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-bg"><i data-lucide="school"></i></div>
+                    <div>
+                        <h4 class="card-title">General Science</h4>
+                        <p class="card-subtitle">APS&APC SADDAR</p>
+                    </div>
+                </div>
+                <div class="card-content">2022 • Score: 63.33%</div>
+            </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion mt-12">
+            <button class="accordion-trigger">
+                <i data-lucide="book"></i> Certifications & Achievements
+            </button>
+            <div class="accordion-content">
+                <div class="certification">MS Office Excellence - Iqra Institute (2023)</div>
+                <div class="certification">Basic WordPress Training - Code Verse Solution (2023)</div>
+                <div class="certification">Introduction to Python - Datacamp (2023)</div>
+                <div class="certification">Intermediate Python - Datacamp (2023)</div>
+                <div class="certification">HTML Certification - KG CODING (2024)</div>
+                <div class="certification">CSS Certification - KG CODING (2024)</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="experience-section">
+        <h3 class="section-title">Experience</h3>
+
+        <div class="experience-list">
+            <div class="experience-card">
+                <div class="experience-icon">
+                    <i data-lucide="briefcase"></i>
+                </div>
+                <div>
+                    <h4 class="experience-role">Front End Web Developer Intern</h4>
+                    <p class="experience-company">Internee.pk</p>
+                    <p class="experience-period">Summer Internship</p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-icon">
+                    <i data-lucide="briefcase"></i>
+                </div>
+                <div>
+                    <h4 class="experience-role">Public Service Operations</h4>
+                    <p class="experience-company">Ombudsman</p>
+                    <p class="experience-period">Spring Internship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <!-- Blue Glow Background -->
+        <div class="skills-glow"></div>
+
+        <div class="container">
+            <h2 class="skills-title">My <span class="text-accent">Skills</span></h2>
+
+            <div class="skills-grid">
+                <!-- Coding Skills -->
+                <div class="skills-card">
+                    <h3 class="skills-subtitle">Coding Skills</h3>
+                    <div class="skills-list" id="coding-skills"></div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="skills-card">
+                    <h3 class="skills-subtitle">Professional Skills</h3>
+                    <div class="skills-list" id="soft-skills"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="blue-glow"></div>
+
+        <div class="container">
+            <h2 class="section-title">
+                About <span class="highlight">Me</span>
+            </h2>
+
+            <div class="about-grid">
+                <div class="profile-pic">
+                    <div class="circle">
+                        <!-- Profile Image -->
+                        <img src="img/pic2.png" alt="Profile" class="profile-image" />
+
+                        <!-- Glow Overlay -->
+                        <div class="circle-glow"></div>
+                    </div>
+
+                </div>
+
+                <div class="about-content">
+                    <h3 class="job-title"><span class="highlight">Software Developer</span></h3>
+                    <p>
+                        To contribute effectively in a professional setting by leveraging strong communication,
+                        problem-solving, and
+                        teamwork skills, while continuously learning and bringing fresh ideas to drive positive
+                        outcomes.
+                    </p>
+                    <a href="#contact" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="blue-glow"></div>
+
+        <div class="container">
+            <h2 class="section-title">
+                Contact <span class="highlight">Me!</span>
+            </h2>
+
+            <div class="form-wrapper">
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Your Name</label>
+                            <input type="text" name="name" required />
+                        </div>
+                        <div class="input-group">
+                            <label>Your Email</label>
+                            <input type="email" name="email" required />
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" name="subject" required />
+                    </div>
+
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="submit-wrap">
+                        <button type="submit" class="send-btn">
+                            <!-- Lucide Send Icon (SVG) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="send-icon" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-text">
+                &copy; <span id="year"></span> Ejaz Ahmed. All rights reserved.
+            </div>
+
+            <div class="footer-icons">
+                <a href="www.linkedin.com/in/ejaz-ahmed1" target="_blank" rel="noopener noreferrer" class="footer-link"
+                    aria-label="LinkedIn">
+                    <!-- LinkedIn Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+
+                <a href="https://sketchfab.com/Ejazahmed1" target="_blank" rel="noopener noreferrer" class="footer-link"
+                    aria-label="GitHub">
+                    <!-- GitHub Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            d="M12 2C6.477 2 2 6.478 2 12a10 10 0 0 0 6.837 9.488c.5.092.683-.217.683-.483v-1.706c-2.782.604-3.369-1.342-3.369-1.342-.455-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.528 2.341 1.087 2.91.832.092-.646.35-1.087.636-1.337-2.22-.254-4.555-1.11-4.555-4.943 0-1.092.39-1.987 1.029-2.687-.103-.254-.446-1.278.098-2.662 0 0 .84-.27 2.75 1.026a9.564 9.564 0 0 1 2.5-.337c.85.004 1.705.114 2.5.337 1.91-1.296 2.75-1.026 2.75-1.026.544 1.384.201 2.408.098 2.662.64.7 1.029 1.595 1.029 2.687 0 3.841-2.337 4.687-4.566 4.936.36.31.678.921.678 1.855v2.753c0 .268.18.58.688.482A10.002 10.002 0 0 0 22 12c0-5.522-4.478-10-10-10z" />
+                    </svg>
+                </a>
+
+                <a href="mailto:ejazahmed6070+resume@gmail.com" class="footer-link" aria-label="Email">
+                    <!-- Mail Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 4h16v16H4z" stroke="none" fill="currentColor" />
+                        <polyline points="4 4 12 13 20 4" fill="none" stroke="#000" stroke-width="2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
